@@ -1,0 +1,399 @@
+[
+ {
+  "fn": "meetTruth",
+  "args": [
+   12,
+   18
+  ],
+  "expected": "Something that repeats every 12 and something that repeats every 18 meet again every 36 (3 cycles of the first, 2 cycles of the second)."
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   7,
+   13
+  ],
+  "expected": "Something that repeats every 7 and something that repeats every 13 meet again every 91 (13 cycles of the first, 7 cycles of the second)."
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   5,
+   5
+  ],
+  "expected": "Something that repeats every 5 and something that repeats every 5 meet again every 5 (1 cycle of the first, 1 cycle of the second)."
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   1,
+   9
+  ],
+  "expected": "Something that repeats every 1 and something that repeats every 9 meet again every 9 (9 cycles of the first, 1 cycle of the second)."
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   6,
+   3
+  ],
+  "expected": "Something that repeats every 6 and something that repeats every 3 meet again every 6 (1 cycle of the first, 2 cycles of the second)."
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   1,
+   1
+  ],
+  "expected": "Something that repeats every 1 and something that repeats every 1 meet again every 1 (1 cycle of the first, 1 cycle of the second)."
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   999999,
+   1000000
+  ],
+  "expected": "Something that repeats every 999999 and something that repeats every 1000000 meet again every 999999000000 (1000000 cycles of the first, 999999 cycles of the second)."
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   1000000,
+   1000000
+  ],
+  "expected": "Something that repeats every 1000000 and something that repeats every 1000000 meet again every 1000000 (1 cycle of the first, 1 cycle of the second)."
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   4,
+   6
+  ],
+  "expected": "Something that repeats every 4 and something that repeats every 6 meet again every 12 (3 cycles of the first, 2 cycles of the second)."
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   0,
+   5
+  ],
+  "expected": "ERR:first period must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   5,
+   1000001
+  ],
+  "expected": "ERR:second period must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "meetTruth",
+  "args": [
+   2.5,
+   4
+  ],
+  "expected": "ERR:first period must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "threeTruth",
+  "args": [
+   4,
+   6,
+   10
+  ],
+  "expected": "Three things that repeat every 4, 6 and 10 all meet again every 60 (15 cycles of the first, 10 cycles of the second, 6 cycles of the third)."
+ },
+ {
+  "fn": "threeTruth",
+  "args": [
+   3,
+   5,
+   7
+  ],
+  "expected": "Three things that repeat every 3, 5 and 7 all meet again every 105 (35 cycles of the first, 21 cycles of the second, 15 cycles of the third)."
+ },
+ {
+  "fn": "threeTruth",
+  "args": [
+   2,
+   2,
+   2
+  ],
+  "expected": "Three things that repeat every 2, 2 and 2 all meet again every 2 (1 cycle of the first, 1 cycle of the second, 1 cycle of the third)."
+ },
+ {
+  "fn": "threeTruth",
+  "args": [
+   1,
+   1,
+   1
+  ],
+  "expected": "Three things that repeat every 1, 1 and 1 all meet again every 1 (1 cycle of the first, 1 cycle of the second, 1 cycle of the third)."
+ },
+ {
+  "fn": "threeTruth",
+  "args": [
+   999999,
+   1000000,
+   999998
+  ],
+  "expected": "Three things that repeat every 999999, 1000000 and 999998 all meet again every 499998500001000000 (499999000000 cycles of the first, 499998500001 cycles of the second, 499999500000 cycles of the third)."
+ },
+ {
+  "fn": "threeTruth",
+  "args": [
+   6,
+   10,
+   15
+  ],
+  "expected": "Three things that repeat every 6, 10 and 15 all meet again every 30 (5 cycles of the first, 3 cycles of the second, 2 cycles of the third)."
+ },
+ {
+  "fn": "threeTruth",
+  "args": [
+   8,
+   12,
+   20
+  ],
+  "expected": "Three things that repeat every 8, 12 and 20 all meet again every 120 (15 cycles of the first, 10 cycles of the second, 6 cycles of the third)."
+ },
+ {
+  "fn": "threeTruth",
+  "args": [
+   0,
+   1,
+   1
+  ],
+  "expected": "ERR:first period must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "threeTruth",
+  "args": [
+   1,
+   1,
+   1000001
+  ],
+  "expected": "ERR:third period must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   12,
+   3,
+   18,
+   5
+  ],
+  "expected": "Something that fires at 3 and then every 12, and something that fires at 5 and then every 18, never fire together: the starts differ by 2, which is not a multiple of 6, the greatest common divisor of 12 and 18."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   12,
+   3,
+   18,
+   9
+  ],
+  "expected": "Something that fires at 3 and then every 12, and something that fires at 9 and then every 18, first fire together at 27, then every 36 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   12,
+   0,
+   18,
+   0
+  ],
+  "expected": "Something that fires at 0 and then every 12, and something that fires at 0 and then every 18, first fire together at 0, then every 36 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   7,
+   2,
+   13,
+   5
+  ],
+  "expected": "Something that fires at 2 and then every 7, and something that fires at 5 and then every 13, first fire together at 44, then every 91 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   5,
+   3,
+   5,
+   3
+  ],
+  "expected": "Something that fires at 3 and then every 5, and something that fires at 3 and then every 5, first fire together at 3, then every 5 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   5,
+   3,
+   5,
+   4
+  ],
+  "expected": "Something that fires at 3 and then every 5, and something that fires at 4 and then every 5, never fire together: the starts differ by 1, which is not a multiple of 5, the greatest common divisor of 5 and 5."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   6,
+   4,
+   4,
+   0
+  ],
+  "expected": "Something that fires at 4 and then every 6, and something that fires at 0 and then every 4, first fire together at 4, then every 12 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   6,
+   5,
+   4,
+   0
+  ],
+  "expected": "Something that fires at 5 and then every 6, and something that fires at 0 and then every 4, never fire together: the starts differ by 5, which is not a multiple of 2, the greatest common divisor of 6 and 4."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   10,
+   100,
+   15,
+   0
+  ],
+  "expected": "Something that fires at 100 and then every 10, and something that fires at 0 and then every 15, first fire together at 120, then every 30 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   1,
+   0,
+   1,
+   0
+  ],
+  "expected": "Something that fires at 0 and then every 1, and something that fires at 0 and then every 1, first fire together at 0, then every 1 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   1,
+   7,
+   9,
+   2
+  ],
+  "expected": "Something that fires at 7 and then every 1, and something that fires at 2 and then every 9, first fire together at 11, then every 9 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   9,
+   2,
+   1,
+   7
+  ],
+  "expected": "Something that fires at 2 and then every 9, and something that fires at 7 and then every 1, first fire together at 11, then every 9 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   4,
+   1,
+   6,
+   3
+  ],
+  "expected": "Something that fires at 1 and then every 4, and something that fires at 3 and then every 6, first fire together at 9, then every 12 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   4,
+   3,
+   6,
+   1
+  ],
+  "expected": "Something that fires at 3 and then every 4, and something that fires at 1 and then every 6, first fire together at 7, then every 12 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   24,
+   5,
+   36,
+   17
+  ],
+  "expected": "Something that fires at 5 and then every 24, and something that fires at 17 and then every 36, first fire together at 53, then every 72 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   999999,
+   1,
+   1000000,
+   999999
+  ],
+  "expected": "Something that fires at 1 and then every 999999, and something that fires at 999999 and then every 1000000, first fire together at 1999999, then every 999999000000 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   1000000,
+   1000000,
+   999999,
+   0
+  ],
+  "expected": "Something that fires at 1000000 and then every 1000000, and something that fires at 0 and then every 999999, first fire together at 999999000000, then every 999999000000 after that."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   1000000,
+   0,
+   1000000,
+   1
+  ],
+  "expected": "Something that fires at 0 and then every 1000000, and something that fires at 1 and then every 1000000, never fire together: the starts differ by 1, which is not a multiple of 1000000, the greatest common divisor of 1000000 and 1000000."
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   0,
+   1,
+   5,
+   1
+  ],
+  "expected": "ERR:first period must be a whole number from 1 to 1000000"
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   5,
+   1,
+   5,
+   1000001
+  ],
+  "expected": "ERR:second start must be a whole number from 0 to 1000000"
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   5,
+   -1,
+   5,
+   1
+  ],
+  "expected": "ERR:first start must be a whole number from 0 to 1000000"
+ },
+ {
+  "fn": "startTruth",
+  "args": [
+   5,
+   1,
+   5.5,
+   1
+  ],
+  "expected": "ERR:second period must be a whole number from 1 to 1000000"
+ }
+]
